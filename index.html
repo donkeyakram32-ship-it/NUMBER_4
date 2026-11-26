@@ -1,1 +1,98 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TIN Registration Portal | URA</title><link rel="stylesheet" href="portal.css"></head><body><header class="header"><img src="ura-logo.png" alt="Uganda Revenue Authority logo"><h1>TIN Registration Portal</h1></header><div class="notice">Have your National ID ready before starting.</div><main class="form-wrap"><form><div class="choices"><label class="choice"><input type="radio" name="taxpayer" value="individual" checked>Individual Taxpayer</label><label class="choice"><input type="radio" name="taxpayer" value="business">Business Entity</label></div><fieldset><legend>Section A: Individual Taxpayer Details</legend><div class="form-group"><label for="full-name">Full Name</label><input id="full-name" name="fullName" type="text" required></div><div class="form-group"><label for="nin">NIN</label><input id="nin" name="nin" type="text" required pattern="[A-Z]{2}[A-Z0-9]{12}" maxlength="14" title="Enter two capital letters followed by 12 capital letters or digits"></div><div class="form-group"><label for="dob">Date of Birth</label><input id="dob" name="dob" type="date"></div><div class="form-group"><span>Gender</span><div class="gender"><label><input type="radio" name="gender" value="male"> Male</label><label><input type="radio" name="gender" value="female"> Female</label></div></div><div class="form-group"><label for="district">District</label><select id="district" name="district"><option value="">Select district</option><option>Kampala</option><option>Wakiso</option><option>Jinja</option><option>Mbarara</option><option>Gulu</option></select></div><div class="form-group"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required></div><div class="form-group"><label for="email">Email</label><input id="email" name="email" type="email"></div><div class="form-group wide"><label for="national-id">Upload National ID</label><input id="national-id" name="nationalId" type="file" accept=".jpg,.jpeg,.pdf"></div><div class="wide"><button class="next" type="submit">Next</button></div></fieldset></form></main></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TIN Registration Portal | URA</title>
+    <link rel="stylesheet" href="portal.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr3epm_96AUadUy_p_7nzzQHABNsQ6Owo8ciqO1QUTgg&s=10" alt="Uganda Revenue Authority logo" />
+      <h1>TIN Registration Portal</h1>
+    </header>
+    <div class="notice">Have your National ID ready before starting.</div>
+    <main class="form-wrap">
+      <form>
+        <div class="choices">
+          <label class="choice"
+            ><input
+              type="radio"
+              name="taxpayer"
+              value="individual"
+              checked
+            />Individual Taxpayer</label
+          ><label class="choice"
+            ><input type="radio" name="taxpayer" value="business" />Business
+            Entity</label
+          >
+        </div>
+        <fieldset>
+          <legend>Section A: Individual Taxpayer Details</legend>
+          <div class="form-group">
+            <label for="full-name">Full Name</label
+            ><input id="full-name" name="fullName" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="nin">NIN</label
+            ><input
+              id="nin"
+              name="nin"
+              type="text"
+              required
+              pattern="[A-Z]{2}[A-Z0-9]{12}"
+              maxlength="14"
+              title="Enter two capital letters followed by 12 capital letters or digits"
+            />
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label
+            ><input id="dob" name="dob" type="date" />
+          </div>
+          <div class="form-group">
+            <span>Gender</span>
+            <div class="gender">
+              <label
+                ><input type="radio" name="gender" value="male" /> Male</label
+              ><label
+                ><input type="radio" name="gender" value="female" />
+                Female</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="district">District</label
+            ><select id="district" name="district">
+              <option value="">Select district</option>
+              <option>Kampala</option>
+              <option>Wakiso</option>
+              <option>Jinja</option>
+              <option>Mbarara</option>
+              <option>Gulu</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label
+            ><input id="phone" name="phone" type="tel" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label
+            ><input id="email" name="email" type="email" />
+          </div>
+          <div class="form-group wide">
+            <label for="national-id">Upload National ID</label
+            ><input
+              id="national-id"
+              name="nationalId"
+              type="file"
+              accept=".jpg,.jpeg,.pdf"
+            />
+          </div>
+          <div class="wide">
+            <button class="next" type="submit">Next</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
